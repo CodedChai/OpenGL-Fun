@@ -3,8 +3,8 @@
     "",
     "\\OpenGLFun",
     "\\OpenGLFun\\OpenGLFun",
-    "\\OpenGLFun\\OpenGLFun\\src",
-    "\\OpenGLFun\\OpenGLFun\\src\\learnOpenGL"
+    "\\OpenGLFun\\OpenGLFun\\src"
   ],
+  "SelectedNode": "\\OpenGLFun",
   "PreviewInSolutionExplorer": false
 }
