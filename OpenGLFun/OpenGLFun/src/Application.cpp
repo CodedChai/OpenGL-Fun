@@ -72,7 +72,7 @@ int main(void)
 		shader.Bind();
 		shader.SetUniform4f("u_Color", 0.8f, 0.3f, 0.8f, 1.0f);
 
-		Texture texture("res/textures/marble.png");
+		Texture texture("res/textures/transparent.png");
 		texture.Bind();
 		shader.SetUniform1i("u_Texture", 0);
 
@@ -82,6 +82,7 @@ int main(void)
 		ib.Unbind();
 
 		Renderer renderer;
+		renderer.ClearColor(1., 0., 1.);
 
 		float r = 0.0f;
 		float increment = 0.05f;
@@ -92,7 +93,7 @@ int main(void)
 			renderer.Clear();
 
 			shader.Bind();
-			shader.SetUniform4f("u_Color", r, 0.3f, 0.8f, 1.0f);
+			//shader.SetUniform4f("u_Color", r, 0.3f, 0.8f, 1.0f);
 
 			renderer.Draw(va, ib, shader);
 
